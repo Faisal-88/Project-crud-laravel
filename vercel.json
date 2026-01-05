@@ -10,8 +10,8 @@
             "dest": "/public/admin_assets/$1"
         },
         {
-            "src": "/(css|js|vendor|img)/(.*)",
-            "dest": "/public/$1/$2"
+            "src": "/favicon.ico",
+            "dest": "/public/favicon.ico"
         },
         {
             "src": "/(.*)",
@@ -21,6 +21,7 @@
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "false",
+        "VIEW_COMPILED_PATH": "/tmp",
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie"
