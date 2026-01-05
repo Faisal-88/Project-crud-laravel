@@ -3,7 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-
+use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\Config;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -23,9 +24,11 @@ class AppServiceProvider extends ServiceProvider
      */
 public function boot()
 {
-    
-    if (env('APP_ENV') === 'production') {
-        config(['view.compiled' => '/tmp']);
+    if (getenv('APP_ENV') === 'production') {
+        
+        URL::forceScheme('https');
+
+        Config::set('view.compiled', '/tmp');
     }
 }
 }
