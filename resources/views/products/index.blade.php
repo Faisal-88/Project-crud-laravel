@@ -3,10 +3,18 @@
 @section('title', 'Product Mahasiswa')
   
 @section('contents')
-    <div class="d-flex align-items-center justify-content-between">
-        <h1 class="mb-0">List Product</h1>
-        <a href="{{ route('products.create') }}" class="btn btn-primary">Add Product</a>
+  <div class="d-flex align-items-center justify-content-between">
+    <h1 class="mb-0">List Product</h1>
+    
+    <div class="d-flex">
+        <a href="{{ route('products.trash') }}" class="btn btn-success mr-2">
+            <i class="fa fa-trash-restore mr-2"></i>Trash
+        </a>
+        <a href="{{ route('products.create') }}" class="btn btn-primary">
+            <i class="fa fa-plus mr-2"></i>Add Product
+        </a>
     </div>
+</div>
     <hr />
     @if(Session::has('success'))
         <div class="alert alert-success" role="alert">

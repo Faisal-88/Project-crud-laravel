@@ -78,4 +78,47 @@ class ProductController extends Controller
   
         return redirect()->route('products')->with('success', 'product deleted successfully');
     }
+
+    /**
+     * Menampilkan daftar produk yang telah dihapus (Trash).
+     */
+    public function trash()
+    {
+        // Mengambil data yang hanya dihapus secara soft delete
+        $product = Product::onlyTrashed()->get();
+        
+        return view('products.trash', compact('product'));
+    }
+
+    /**
+     * Mengembalikan data produk yang dihapus.
+     */
+    public function restore($id = null)
+    {
+        if ($id) {
+        $product = Product::withTrashed()->findOrFail($id);
+        $product->restore();
+
+        return redirect()->route('products.trash')->with('success', 'Product restored successfully');
+        } else {
+        Product::onlyTrashed()->restore();
+        return redirect()->route('products.trash')->with('success', 'All products restored successfully');
+        }
+    }
+
+    /**
+     * Menghapus data secara permanen dari database.
+     */
+    public function deleteAll($id = null)
+    {
+        if ($id) {
+        $product = Product::withTrashed()->findOrFail($id);
+        $product->forceDelete();
+        return redirect()->route('products.trash')->with('success', 'Product permanently deleted');
+        } else {
+            Product::onlyTrashed()->forceDelete();
+        return redirect()->route('products.trash')->with('success', 'Trash cleared successfully');
+        }
+    }
+
 }
