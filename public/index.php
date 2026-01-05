@@ -4,7 +4,7 @@
 | Vercel Writable Path Fix
 |--------------------------------------------------------------------------
 */
-if (env('APP_ENV') === 'production') {
+if (getenv('APP_ENV') === 'production') {
     putenv('APP_CONFIG_CACHE=/tmp/config.php');
     putenv('APP_EVENTS_CACHE=/tmp/events.php');
     putenv('APP_PACKAGES_CACHE=/tmp/packages.php');
