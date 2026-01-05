@@ -22,12 +22,112 @@
             "dest": "/public/admin_assets/js/"
         },
         {
+            "src": "/admin_assets/js/demo/(.*)",
+            "dest": "/public/admin_assets/js/demo/"
+        },
+        {
             "src": "/admin_assets/scss/(.*)",
             "dest": "/public/admin_assets/scss/"
         },
         {
+            "src": "/admin_assets/scss/navs/(.*)",
+            "dest": "/public/admin_assets/scss/navs/"
+        },
+        {
+            "src": "/admin_assets/scss/utilities/(.*)",
+            "dest": "/public/admin_assets/scss/utilities/"
+        },
+        {
             "src": "/admin_assets/vendor/(.*)",
             "dest": "/public/admin_assets/vendor/"
+        },
+        {
+            "src": "/admin_assets/vendor/bootstrap/(.*)",
+            "dest": "/public/admin_assets/vendor/bootsrap/"
+        },
+        {
+            "src": "/admin_assets/vendor/bootstrap/js/(.*)",
+            "dest": "/public/admin_assets/vendor/bootsrap/js/"
+        },
+        {
+            "src": "/admin_assets/vendor/bootstrap/scss/(.*)",
+            "dest": "/public/admin_assets/vendor/bootsrap/scss/"
+        },
+        {
+            "src": "/admin_assets/vendor/bootstrap/scss/mixins/(.*)",
+            "dest": "/public/admin_assets/vendor/bootsrap/scss/mixins/"
+        },
+        {
+            "src": "/admin_assets/vendor/bootstrap/scss/utilities/(.*)",
+            "dest": "/public/admin_assets/vendor/bootsrap/scss/utilities/"
+        },
+        {
+            "src": "/admin_assets/vendor/bootstrap/scss/vendor/(.*)",
+            "dest": "/public/admin_assets/vendor/bootsrap/scss/vendor/"
+        },
+        {
+            "src": "/admin_assets/vendor/bootstrap/chart.js/(.*)",
+            "dest": "/public/admin_assets/vendor/bootsrap/chart.js/"
+        },
+        {
+            "src": "/admin_assets/vendor/bootstrap/datatables/(.*)",
+            "dest": "/public/admin_assets/vendor/bootsrap/datatables/"
+        },
+        {
+            "src": "/admin_assets/vendor/bootstrap/fontawesome-free/(.*)",
+            "dest": "/public/admin_assets/vendor/bootsrap/fontawesome-free/"
+        },
+        {
+            "src": "/admin_assets/vendor/bootstrap/fontawesome-free/css/(.*)",
+            "dest": "/public/admin_assets/vendor/bootsrap/fontawesome-free/css/"
+        },
+        {
+            "src": "/admin_assets/vendor/bootstrap/fontawesome-free/js/(.*)",
+            "dest": "/public/admin_assets/vendor/bootsrap/fontawesome-free/js/"
+        },
+        {
+            "src": "/admin_assets/vendor/bootstrap/fontawesome-free/less/(.*)",
+            "dest": "/public/admin_assets/vendor/bootsrap/fontawesome-free/less/"
+        },
+        {
+            "src": "/admin_assets/vendor/bootstrap/fontawesome-free/metadata/(.*)",
+            "dest": "/public/admin_assets/vendor/bootsrap/fontawesome-free/metadata/"
+        },
+        {
+            "src": "/admin_assets/vendor/bootstrap/fontawesome-free/scss/(.*)",
+            "dest": "/public/admin_assets/vendor/bootsrap/fontawesome-free/scss/"
+        },
+        {
+            "src": "/admin_assets/vendor/bootstrap/fontawesome-free/sprites/(.*)",
+            "dest": "/public/admin_assets/vendor/bootsrap/fontawesome-free/spites/"
+        },
+        {
+            "src": "/admin_assets/vendor/bootstrap/fontawesome-free/svgs/(.*)",
+            "dest": "/public/admin_assets/vendor/bootsrap/fontawesome-free/svgs/"
+        },
+        {
+            "src": "/admin_assets/vendor/bootstrap/fontawesome-free/svgs/brands/(.*)",
+            "dest": "/public/admin_assets/vendor/bootsrap/fontawesome-free/svgs/brands/"
+        },
+        {
+            "src": "/admin_assets/vendor/bootstrap/fontawesome-free/svgs/regular/(.*)",
+            "dest": "/public/admin_assets/vendor/bootsrap/fontawesome-free/svgs/regular/"
+        },
+        {
+            "src": "/admin_assets/vendor/bootstrap/fontawesome-free/svgs/solid/(.*)",
+            "dest": "/public/admin_assets/vendor/bootsrap/fontawesome-free/svgs/solid/"
+        },
+        {
+            "src": "/admin_assets/vendor/bootstrap/fontawesome-free/webfonts/(.*)",
+            "dest": "/public/admin_assets/vendor/bootsrap/fontawesome-free/webfonts/"
+        },
+        {
+            "src": "/admin_assets/vendor/bootstrap/jquery/(.*)",
+            "dest": "/public/admin_assets/vendor/bootsrap/jquery/"
+        },
+        {
+            "src": "/admin_assets/vendor/bootstrap/jquery-easing/(.*)",
+            "dest": "/public/admin_assets/vendor/bootsrap/jquery-easing/"
         },
         {
             "src": "/(.*)",
